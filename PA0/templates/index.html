@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PA0 Encipher Decipher</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+ 
+
+
+<body>
+    
+    <div class="container p-3 my-3 bg-primary text-white">
+    <h2>PA0 Encipher and Decipher</h2>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h4>Plain Text</h4>
+            <form role="form" method='POST' action='/'>
+            <div class="form-group">
+            <input type="text" name="enc" class="form-control" id="url-box" value = "{{ enc }}"placeholder="" autofocus required>
+          </div>
+          <button type="submit" value ="enc" class="btn btn-dark">Encipher</button>
+        </form>
+          </div>
+          <div class="col-sm">
+            <h4>Cipher Text</h4>
+                <form role="form" method='POST' action='/'>
+                <div class="form-group">
+              <input type="text" name="dec" class="form-control" id="url-box" value = "{{ dec }}"placeholder="" autofocus required>
+            </div>
+            <button type="submit" value ="dec" class="btn btn-dark">Decipher</button>
+          </form>
+          </div>
+         <!-- <div class="col-sm">
+            <h4>Plain Text</h4>
+            <form role="form" method='POST' action='/'>
+            <label for="text">Plain Text</label>
+            <br>
+            <textarea type="text" name="enc" class="form-control" id="url-box" value = "{{ enc }}"placeholder="" autofocus required>
+            <br/>
+            <input type="submit" value ="enc" class="btn btn-dark">Encipher>
+        </div>
+          <button type="submit" value ="enc" class="btn btn-dark">Encipher</button>
+        </form>
+          </div>
+          <div class="col-sm">
+            <h4>Cipher Text</h4>
+                <form role="form" method='POST' action='/'>
+                <div class="form-group">
+              <input type="text" name="dec" class="form-control" id="url-box" value = "{{ dec }}"placeholder="" autofocus required>
+            </div>
+            <button type="submit" value ="dec" class="btn btn-dark">Decipher</button>
+          </form>
+          </div>
+        </div> -->
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+      <form role="form" method='GET' action='/'>
+        <br>
+        <br>
+        <br>
+        <br>
+    <button type="submit" class="btn btn-dark">------CLEAR------</button>
+  </form>
+    <!-- <div class="container">
+        <h4>Plain Text</h4>
+        <form role="form" method='POST' action='/'>
+          <div class="form-group">
+            <input type="text" name="enc" class="form-control" id="url-box" value = "{{ enc }}"placeholder="" autofocus required>
+          </div>
+          <button type="submit" value ="enc" class="btn btn-dark">Encipher</button>
+        </form>
+        <br>
+        <h4>Cipher Text</h4>
+        <form role="form" method='POST' action='/'>
+            <div class="form-group">
+              <input type="text" name="dec" class="form-control" id="url-box" value = "{{ dec }}"placeholder="" autofocus required>
+            </div>
+            <button type="submit" value ="dec" class="btn btn-dark">Decipher</button>
+          </form>
+
+
+      </div> -->
+    </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</body>
+ 
+</html>
