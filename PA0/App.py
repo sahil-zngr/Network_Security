@@ -5,7 +5,7 @@ app = Flask(__name__)
 #function to encrypt and decrypt
 #both encrypt and decrypt equation is same
 # C = E(p) = 27 - p, here c = ciphertext, p = letter/charcter, here a is 1 and z is 26
-def encdec(text):
+def EncryptDecrypt(text):
     ans = ""
     for c in text:
         if c >= 'a' and c <= 'z':
@@ -32,11 +32,11 @@ def index():
         if request.form.get('enc')!= None:
             enc_text = request.form['enc']
             print(enc_text)
-            dec_text = encdec(enc_text)
+            dec_text = EncryptDecrypt(enc_text)
             print(dec_text)
         elif request.form.get('dec') != None:
             dec_text = request.form['dec']
-            enc_text = encdec(dec_text)
+            enc_text = EncryptDecrypt(dec_text)
         return render_template('index.html', enc = enc_text, dec = dec_text)
 
 
