@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>ELGAMAL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+ 
+
+
+<body>
+    
+    <div class="container p-3 my-3 bg-primary text-white">
+    <h2>ELGAMAL Encipher and Decipher</h2>
+    <br>
+    <br>
+    <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h3>Encrypt</h3>
+            <form role="form" method='POST' action='/'>
+            <h5>private Key</h5>
+              <div class="form-group">
+                <input type="number" name="pk" class="form-control" id="url-box" value = "{{ pk }}"placeholder=" < 91744612" autofocus required>
+              </div>
+            <h5>Plain Text</h5>
+            
+            <div class="form-group">
+            <input type="number" name="encpt" class="form-control" id="url-box" value = "{{ encpt }}"placeholder=" < 91744613" autofocus required>
+          </div>
+          <h5>Cipher Text (C1,C2)</h5>
+          <input type="text" name="encct" class="form-control" id="url-box" value = "{{ encct }}"placeholder="" readonly>
+          <!-- <p id="text">{{ encct }}</p> -->
+
+          <button type="submit" value ="enc" class="btn btn-dark">Encipher</button>
+        </form>
+          </div>
+
+
+          <div class="col-sm">
+            <h3>Decrypt</h3>
+            <form role="form" method='POST' action='/'>
+            <h5>private Key</h5>
+              <div class="form-group">
+                <input type="number" name="pk" class="form-control" id="url-box" value = "{{ pk }}"placeholder=" < 91744612" autofocus required>
+              </div>
+            <h5>Cipher Text (C1,C2)</h5>
+                
+                <div class="form-group">
+              <input type="text" name="decct" class="form-control" id="url-box" value = "{{ decct }}"placeholder=" < 91744613" autofocus required>
+            </div>
+            <h5>Plain Text</h5>
+            <input type="number" name="decpt" class="form-control" id="url-box" value = "{{ decpt }}"placeholder="" readonly>
+          <!-- <p id="text">{{ decpt }}</p> -->
+
+            <button type="submit" value ="dec" class="btn btn-dark">Decipher</button>
+          </form>
+          </div>
+        <br>
+        <br>
+        <br>
+        <br>
+      </div>
+      <form role="form" method='GET' action='/'>
+        <br>
+        <br>
+        <br>
+        <br>
+    <button type="submit" class="btn btn-dark">------CLEAR------</button>
+  </form>
+  <br>
+  <br>
+    <h6>-Sahil M. Chaudhari 18074014</h6>
+    </div>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+</body>
+ 
+</html>
