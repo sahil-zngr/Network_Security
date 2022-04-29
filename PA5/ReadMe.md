@@ -1,4 +1,4 @@
-ElGamal python implementation
+ElGamal Public Key Encryption python implementation
 PA5 netsec
 
 # to run the code install / run command on cli we require Python > 3.8
